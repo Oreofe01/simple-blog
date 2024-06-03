@@ -5,11 +5,14 @@ import Footer from './footer'
 
 const Layout = () => {
     return (
-        <div className='w-3/4 mx-auto'>
-            <Header />
-            <Outlet />
+        <div>
+            <div className='w-3/4 mx-auto'>
+                <Header />
+                <Outlet />
+            </div>
             <Footer />
         </div>
+
     )
 }
 

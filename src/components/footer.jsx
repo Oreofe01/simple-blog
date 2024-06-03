@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 const Footer = () => {
     return (
         <div className='bg-zinc-400'>
-            <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 mt-5'>
+            <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 mt-5 w-3/4 mx-auto py-6'>
                 <div>
                     <h2 className='font-bold text-base md:text-lg lg:text-xl'>About</h2>
                     <p className='text-sm'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi magni animi
@@ -46,7 +46,6 @@ const Footer = () => {
                         placeholder='Your Email' />
                     <button className='bg-blue-700 w-full py-2 rounded-md text-zinc-50 font-semibold' >Subscribe</button>
                 </div>
-
             </div>
         </div>
 
