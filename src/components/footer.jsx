@@ -1,10 +1,11 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import { MdOutlineEmail } from "react-icons/md";
 
 const Footer = () => {
     return (
-        <div className='bg-zinc-400'>
-            <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 mt-5 w-3/4 mx-auto py-6'>
+        <div className='bg-gray-200'>
+            <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 mt-5 w-3/4 mx-auto py-10'>
                 <div>
                     <h2 className='font-bold text-base md:text-lg lg:text-xl'>About</h2>
                     <p className='text-sm'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi magni animi
@@ -38,13 +39,22 @@ const Footer = () => {
                     <Link to="*">Sports</Link>
                 </div>
 
-                <div className='flex flex-col items-center space-y-2 text-sm'>
-                    <h2 className='font-bold text-base md:text-lg lg:text-xl'>Weekly Newsletter</h2>
-                    <p>Get blog articles and offers via email</p>
-                    <input type="email"
-                        className='border-2 rounded-md w-full py-1'
-                        placeholder='Your Email' />
-                    <button className='bg-blue-700 w-full py-2 rounded-md text-zinc-50 font-semibold' >Subscribe</button>
+                <div>
+                    <form className='flex flex-col items-center space-y-2 text-sm bg-white rounded p-5 w-[270px]' action=''>
+                        <h2 className='font-bold text-base md:text-lg lg:text-xl'>Weekly Newsletter</h2>
+                        <p>Get blog articles and offers via email</p>
+
+                        <div className='border-2 rounded-md py-2 flex items-center w-full'>
+                            <input
+                                type="email"
+                                className='outline-none'
+                                placeholder='Your Email' />
+                            <MdOutlineEmail className='text-gray-400 ml-auto' />
+                        </div>
+
+
+                        <button className='bg-blue-700 w-full py-2 rounded-md text-zinc-50 font-semibold px-24'>Subscribe</button>
+                    </form>
                 </div>
             </div>
         </div>
