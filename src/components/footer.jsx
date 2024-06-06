@@ -1,11 +1,13 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import { MdOutlineEmail } from "react-icons/md";
+import footerLogo from '../assets/footerLogo.svg'
+
 
 const Footer = () => {
     return (
-        <div className='bg-gray-200'>
-            <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 mt-5 w-3/4 mx-auto py-10'>
+        <footer className='bg-gray-200 w-screen pr-20'>
+            <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-10 mt-5 w-3/4 mx-auto py-10'>
                 <div>
                     <h2 className='font-bold text-base md:text-lg lg:text-xl'>About</h2>
                     <p className='text-sm'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi magni animi
@@ -44,20 +46,32 @@ const Footer = () => {
                         <h2 className='font-bold text-base md:text-lg lg:text-xl'>Weekly Newsletter</h2>
                         <p>Get blog articles and offers via email</p>
 
-                        <div className='border-2 rounded-md py-2 flex items-center w-full'>
+                        <div className='border-2 rounded-md py-2 flex items-center w-full pl-2'>
                             <input
                                 type="email"
                                 className='outline-none'
                                 placeholder='Your Email' />
-                            <MdOutlineEmail className='text-gray-400 ml-auto' />
+                            <MdOutlineEmail className='text-gray-400 ml-10' />
                         </div>
 
 
-                        <button className='bg-blue-700 w-full py-2 rounded-md text-zinc-50 font-semibold px-24'>Subscribe</button>
+                        <button className='bg-blue-700 w-full py-2 rounded-md text-zinc-50 font-semibold px-24 hover:bg-indigo-700'>Subscribe</button>
                     </form>
                 </div>
             </div>
-        </div>
+
+            <div className='flex w-4/5 mx-auto flex-wrap items-start justify-between py-8 border-t border-gray-300 mt-5'>
+                <div className='max-w-xs'>
+                    <img src={footerLogo} alt="Footer Logo" />
+                </div>
+                <div className='flex gap-8 text-sm mt-5 text-gray-600 hover:text-zinc-800'>
+                    <Link to='*'>Terms of Use</Link>
+                    <Link to='*'>Privacy Policy</Link>
+                    <Link to='*'>Cookie Policy</Link>
+                </div>
+            </div>
+        </footer>
+
 
     )
 }

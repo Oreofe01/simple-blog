@@ -31,16 +31,11 @@ const Header = () => {
             link: "/contact",
             label: "Contact Us",
         },
-        // {
-        //     id: 6,
-        //     link: "/profile",
-        //     label: "Profile",
-        // },
     ]
     return (
         <div className="bg-white sticky top-0 z-50 w-full px-5 py-4 flex items-center justify-between">
 
-            <div>
+            <div className='shrink-0'>
                 <img src={meta} className="meta logo" alt="Meta logo" />
             </div>
 
@@ -61,8 +56,6 @@ const Header = () => {
                 />
                 <FontAwesomeIcon icon={faSearch} className="text-gray-500 mr-1" />
             </div>
-
-            {/* bg-gray-700 text-white rounded-full py-2 px-4 w-64 focus:outline-none focus:ring focus:border-blue-300" */}
 
         </div>
     )
