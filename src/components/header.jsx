@@ -4,6 +4,7 @@ import { faSearch } from '@fortawesome/free-solid-svg-icons'
 import { Link, NavLink } from 'react-router-dom'
 import meta from '../assets/meta.svg'
 
+
 const Header = () => {
     const NavigationArray = [
         {
@@ -39,7 +40,7 @@ const Header = () => {
                 <img src={meta} className="meta logo" alt="Meta logo" />
             </div>
 
-            <nav className='flex items-center space-x-6 text-zinc-700 ml-28'>
+            <nav className='flex items-center space-x-6 text-zinc-700 ml-28 font-semibold'>
                 {NavigationArray?.map((navigation) => (
                     <NavLink key={navigation.label}
                         to={`${navigation.link}`}

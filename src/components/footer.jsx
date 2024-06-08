@@ -64,10 +64,10 @@ const Footer = () => {
                 <div className='max-w-xs'>
                     <img src={footerLogo} alt="Footer Logo" />
                 </div>
-                <div className='flex gap-8 text-sm mt-5 text-gray-600 hover:text-zinc-800'>
-                    <Link to='*'>Terms of Use</Link>
-                    <Link to='*'>Privacy Policy</Link>
-                    <Link to='*'>Cookie Policy</Link>
+                <div className='flex gap-8 text-sm mt-5 text-gray-600'>
+                    <Link to='*' className='hover:text-zinc-800'>Terms of Use</Link>
+                    <Link to='*' className='hover:text-zinc-800'>Privacy Policy</Link>
+                    <Link to='*' className='hover:text-zinc-800'>Cookie Policy</Link>
                 </div>
             </div>
         </footer>

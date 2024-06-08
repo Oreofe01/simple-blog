@@ -2,6 +2,7 @@ import './App.css'
 import BannerSide from './components/bannerSide'
 import JasonImg from './assets/JasonImg.svg'
 import Advertisement from './components/advertisement'
+import Blog from './pages/blog'
 
 const App = () => {
 
@@ -25,6 +26,10 @@ const App = () => {
       </div>
 
       <Advertisement />
+      <div className='mt-10'>
+        <Blog />
+      </div>
+
     </div>
   )
 }

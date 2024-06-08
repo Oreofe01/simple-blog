@@ -3,7 +3,7 @@ import banner from '../assets/banner.svg'
 
 const BannerSide = () => {
     return (
-        <div className='w-[1000px] mx-auto relative'>
+        <div className='mx-auto relative'>
             <img src={banner} alt="Meta banner" />
         </div>
     )

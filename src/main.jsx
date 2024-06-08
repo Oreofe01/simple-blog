@@ -9,6 +9,7 @@ import Pages from './pages/pages'
 import ContactUs from './pages/contactus'
 import Layout from './components/layout'
 import NotFound from './pages/notfound'
+import SingleBlogPost from './pages/single-blog-post'
 
 
 const router = createBrowserRouter([
@@ -23,6 +24,10 @@ const router = createBrowserRouter([
       {
         path: "blog",
         element: <Blog />,
+      },
+      {
+        path: "blog/:id",
+        element: <SingleBlogPost />,
       },
       {
         path: "singlepost",
