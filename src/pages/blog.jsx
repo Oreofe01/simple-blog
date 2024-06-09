@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import SingleBlogPost from "./single-blog-post";
-import { baseapi } from "../constants";
+import { baseapi } from "../constants/index.js";
 
 const Blog = () => {
     // const baseapi = import.meta.env.VITE_BASE_API_LINK;

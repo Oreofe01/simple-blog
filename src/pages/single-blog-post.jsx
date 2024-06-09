@@ -6,7 +6,7 @@ const SingleBlogPost = ({ cohort2post }) => {
 
     return (
         <Link to={`/blog/${cohort2post?.slug}`}>
-            <div className="border border-blue-300 drop-shadow-md rounded-md p-3 h-[550px]">
+            <div className="border border-gray-300 drop-shadow-md rounded-md p-3 h-[550px]">
                 <img src={cohort2post?.post_image} alt="img" className="h-60 w-full" />
                 <h5 className="text-green-500">{cohort2post?.title}</h5>
                 <p

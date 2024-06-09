@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from "react";
 import { Link, useParams } from "react-router-dom";
-import { baseapi } from "../constants";
+import { baseapi } from "../constants/index.js";
 
-const ThePost = () => {
+const PostCard = () => {
     const params = useParams();
     const [post, setPost] = useState();
     console.log("from the post => ", params);
@@ -44,12 +44,13 @@ const ThePost = () => {
                     dangerouslySetInnerHTML={{ __html: post?.post_content }}
                 />
             </div>
+
             {/* a button that goes back to the blog page */}
-            <button>
-                <Link to="/blog">go bck</Link>
+            <button className="bg-black w-fit text-cyan-200 p-1 rounded">
+                <Link to="/blog">Back</Link>
             </button>
         </div>
     );
 };
 
-export default ThePost;
+export default PostCard;
