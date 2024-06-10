@@ -1,8 +1,7 @@
 import React, { useEffect, useState } from "react";
-import SingleBlogPost from "./single-blog-post";
 import { baseapi } from "../constants/index.js";
 import banner from "../assets/banner.svg"
-import Blogbannertext from "../components/blogbannertext.jsx";
+import SingleBlogPost from "../pages/single-blog-post";
 
 const Blog = () => {
     // const baseapi = import.meta.env.VITE_BASE_API_LINK;
@@ -10,8 +9,6 @@ const Blog = () => {
     // https://cohort2-blog-api.onrender.com/post/all-posts
 
     const [postData, setPostData] = useState([]);
-
-    console.log("posts inside post data state => ", postData);
 
     const fetchData = async () => {
         try {
@@ -36,12 +33,9 @@ const Blog = () => {
 
     return (
         <div>
-            <h4 className="flex justify-center font-bold text-2xl my-10">All Blog Posts</h4>
-            <img src={banner} alt="banner" />
-            <Blogbannertext />
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-10">
-                {postData?.map((post) => (
+                {postData.slice(0, 9)?.map((post) => (
                     <SingleBlogPost key={post.id} cohort2post={post} />
                 ))}
             </div>

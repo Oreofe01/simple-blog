@@ -19,13 +19,8 @@ const Header = () => {
         },
         {
             id: 3,
-            link: "/singlepost",
-            label: "Single Post",
-        },
-        {
-            id: 4,
-            link: "/pages",
-            label: "Pages",
+            link: "/about",
+            label: "About",
         },
         {
             id: 5,

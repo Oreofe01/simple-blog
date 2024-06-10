@@ -3,7 +3,7 @@ import React from 'react'
 const ContactUs = () => {
     return (
         <div>
-            <h4>Contact Page</h4>
+            {/* <h4>Contact Page</h4> */}
 
             <div className="min-h-screen flex justify-center items-center bg-gray-100">
                 <div className="max-w-md w-full bg-white p-8 rounded-lg shadow-lg">

@@ -15,7 +15,7 @@ const PostCard = () => {
 
     const fetchData = async () => {
         try {
-            const response = await fetch(`${baseapi}/post/${params.slug}`);
+            const response = await fetch(`${baseapi}/post/${params.id}`);
             const fullresponse = response.json();
             return fullresponse;
         } catch (error) {
@@ -38,16 +38,16 @@ const PostCard = () => {
         <div>
             <div className="p-3">
                 <img src={post?.post_image} alt="img" />
-                <h5 className="text-green-500">{post?.title}</h5>
+                <h5 className="text-gray-500 font-bold mb-6">{post?.title}</h5>
                 <p
-                    className="text-gray-600"
+                    className="text-gray-800 text-justify"
                     dangerouslySetInnerHTML={{ __html: post?.post_content }}
                 />
             </div>
 
             {/* a button that goes back to the blog page */}
-            <button className="bg-black w-fit text-cyan-200 p-1 rounded">
-                <Link to="/blog">Back</Link>
+            <button className="my-5">
+                <Link to="/blog" className="bg-blue-800 rounded-full py-1 px-6 text-gray-300 font-semibold hover:bg-blue-500">Back</Link>
             </button>
         </div>
     );

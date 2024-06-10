@@ -3,6 +3,8 @@ import BannerSide from './components/bannerSide'
 import JasonImg from './assets/JasonImg.svg'
 import Advertisement from './components/advertisement'
 import Blog from './pages/blog'
+import { Link } from 'react-router-dom'
+import Blogslice from './components/blogslice'
 
 const App = () => {
 
@@ -26,8 +28,15 @@ const App = () => {
       </div>
 
       <Advertisement />
+      <h4 className="font-semibold text-lg mb-4 mt-16">Latest Posts</h4>
       <div className='mt-10'>
-        <Blog />
+        <Blogslice />
+      </div>
+      <Link to="/blog" className='flex justify-center mt-6'>
+        <button className='border border-gray-400 rounded p-1 text-sm font-semibold text-gray-400  hover:bg-gray-500'>View All Post</button>
+      </Link>
+      <div className='-mt-24'>
+        <Advertisement />
       </div>
 
     </div>
