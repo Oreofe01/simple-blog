@@ -9,6 +9,9 @@ import Layout from './components/layout'
 import NotFound from './pages/notfound'
 import PostCard from './pages/post-card'
 import About from './pages/about'
+import Profile from './pages/profile'
+import RegisterForm from './pages/registerForm'
+import LoginForm from './pages/loginform'
 
 
 const router = createBrowserRouter([
@@ -29,6 +32,10 @@ const router = createBrowserRouter([
         element: <PostCard />,
       },
       {
+        path: ":profile",
+        element: <Profile />,
+      },
+      {
         path: "about",
         element: <About />,
       },
@@ -37,6 +44,14 @@ const router = createBrowserRouter([
         element: <ContactUs />,
       },
     ]
+  },
+  {
+    path: "register",
+    element: <RegisterForm />,
+  },
+  {
+    path: "login",
+    element: <LoginForm />,
   },
   {
     path: "*",

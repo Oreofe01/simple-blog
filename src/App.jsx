@@ -8,6 +8,7 @@ import Blogslice from './components/blogslice'
 
 const App = () => {
 
+
   return (
     <div className='w-full'>
       <BannerSide />
@@ -33,7 +34,7 @@ const App = () => {
         <Blogslice />
       </div>
       <Link to="/blog" className='flex justify-center mt-6'>
-        <button className='border border-gray-400 rounded p-1 text-sm font-semibold text-gray-400  hover:bg-gray-500'>View All Post</button>
+        <button className='border border-gray-400 rounded p-1 text-sm font-semibold text-gray-400  hover:bg-gray-300'>View All Post</button>
       </Link>
       <div className='-mt-24'>
         <Advertisement />
