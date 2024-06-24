@@ -5,9 +5,12 @@ import Advertisement from './components/advertisement'
 import Blog from './pages/blog'
 import { Link } from 'react-router-dom'
 import Blogslice from './components/blogslice'
+import { useAuthContext } from './context/auth-context'
 
 const App = () => {
+  const { userData } = useAuthContext();
 
+  console.log("The validated user data =>", userData);
 
   return (
     <div className='w-full'>

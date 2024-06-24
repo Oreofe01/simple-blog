@@ -12,6 +12,7 @@ import About from './pages/about'
 import Profile from './pages/profile'
 import RegisterForm from './pages/registerForm'
 import LoginForm from './pages/loginform'
+import { AuthContextProvider } from './context/auth-context.jsx'
 
 
 const router = createBrowserRouter([
@@ -61,6 +62,8 @@ const router = createBrowserRouter([
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <RouterProvider router={router} />
-  </React.StrictMode>,
-)
+    <AuthContextProvider>
+      <RouterProvider router={router} />
+    </AuthContextProvider>
+  </React.StrictMode>
+);

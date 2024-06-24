@@ -131,7 +131,7 @@ const RegisterForm = () => {
                             value={confirmPassword}
                             required
                             onChange={(e) => setConfirmPassword(e.target.value)}
-                            placeholder="Comfirm Password"
+                            placeholder="Confirm Password"
                         />
                     </div>
 

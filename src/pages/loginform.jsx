@@ -26,11 +26,12 @@ const LoginForm = () => {
         }).then((res) => {
             console.log("The login response =>", res);
             // clearing the form after registration
-            setEmail("")
-            setPassword("")
+            setEmail("");
+            setPassword("");
+            window.location.assign("/");
 
             // after loging in push the user to the home page
-            navigate("/");
+            // navigate("/");
         }).catch((error) => {
             console.log("login error", error);
             // plating the error msg

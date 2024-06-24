@@ -1,6 +1,10 @@
-import React from 'react'
+import React from 'react';
+import { useAuthContext } from "../context/auth-context.jsx";
 
 const About = () => {
+    const { userData } = useAuthContext();
+    console.log("the validated user data from about page => ", userData);
+
     return (
         <div>
             <div className="mx-auto px-4 py-8">
