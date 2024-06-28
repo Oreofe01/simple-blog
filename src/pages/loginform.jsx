@@ -85,6 +85,15 @@ const LoginForm = () => {
                             Login
                         </button>
                     </div>
+
+                    <div>
+                        <button
+                            className="bg-gray-300 hover:bg-gray-500 font-semibold py-2 px-4 rounded hover:text-white transition duration-300 disabled:cursor-not-allowed disabled:opacity-25"
+                            type="submit"
+                            disabled={logingin}>
+                            Login
+                        </button>
+                    </div>
                 </form>
             </div>
 
